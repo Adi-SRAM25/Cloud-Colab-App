@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <Button
+        android:id="@+id/maths"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="180dp"
+        android:text="MAN-002"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/phy"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="PHN-004"
+        app:layout_constraintEnd_toEndOf="@+id/maths"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/maths"
+        app:layout_constraintTop_toBottomOf="@+id/maths" />
+
+    <Button
+        android:id="@+id/thermo"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="MIN-106 (THERMODYNAMICS)"
+        app:layout_constraintEnd_toEndOf="@+id/phy"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phy"
+        app:layout_constraintTop_toBottomOf="@+id/phy" />
+
+    <Button
+        android:id="@+id/net"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="EEN-102 (NETWORK THEORY)"
+        app:layout_constraintEnd_toEndOf="@+id/thermo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/thermo"
+        app:layout_constraintTop_toBottomOf="@+id/thermo" />
+
+    <Button
+        android:id="@+id/inst"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:text="EEN-104 (INSTRUMENTATION)"
+        app:layout_constraintEnd_toEndOf="@+id/net"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/net"
+        app:layout_constraintTop_toBottomOf="@+id/net" />
+
+    <Button
+        android:id="@+id/ana"
+        android:layout_width="260dp"
+        android:layout_height="45dp"
+        android:text="EEN-106 (ANALOG)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/inst"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inst"
+        app:layout_constraintTop_toBottomOf="@+id/inst"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="320dp"
+        android:layout_height="69dp"
+        android:text="PLEASE SELECT A SUBJECT  TO CONTINUE"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.991" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="225dp"
+        android:layout_height="27dp"
+        android:text="Please rate your experience"
+        android:textColor="#F44336"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.973" />
+</androidx.constraintlayout.widget.ConstraintLayout>
